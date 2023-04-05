@@ -20,6 +20,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
+  - [Key Features](#key-features)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -28,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [AWESOME BOOKS] <a name="about-project"></a>
+# 📖 [BOOKStore] <a name="about-project"></a>
 
 > This project aims to create a basic website that showcases a list of books that can be edited by users. The objective is to build a responsive multi-page book website using Html, CSS, and JavaScript.
 
@@ -55,8 +56,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -76,6 +75,16 @@ To get a local copy up and running follow these simple example steps.
 - write: npm install
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- key features -->
+
+## 👥 Key Features <a name="key-features"></a>
+
+- Add books
+- remove books
+- books categories
+
+p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
