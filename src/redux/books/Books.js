@@ -22,7 +22,7 @@ export default function books(state = initialState, action) {
 
 export const addBook = createAsyncThunk(ADD_BOOK, async (book) => {
   await axios.post(
-    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/rnyz8bgoJf9iNhz5aa7t/books',
+    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/RqcBxPe9A1YcpVNHNeDJ/books',
     {
       item_id: book.id,
       title: book.title,
@@ -46,14 +46,14 @@ export const addBook = createAsyncThunk(ADD_BOOK, async (book) => {
 
 export const removeBook = createAsyncThunk(REMOVE_BOOK, async (id) => {
   await axios.delete(
-    `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/rnyz8bgoJf9iNhz5aa7t/books/${id}`,
+    `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/RqcBxPe9A1YcpVNHNeDJ/books/${id}`,
   );
   return { id };
 });
 
 export const fetchBooks = createAsyncThunk(FETCH_BOOKS, async () => {
   const res = await axios.get(
-    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/rnyz8bgoJf9iNhz5aa7t/books',
+    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/RqcBxPe9A1YcpVNHNeDJ/books',
   );
   return { books: Object.entries(res.data) };
 });
