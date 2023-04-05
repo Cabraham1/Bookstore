@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './style.css';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
+import { fetchBooks } from './redux/books/Books';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+store.dispatch(fetchBooks());
 root.render(
   <React.StrictMode>
     <Provider store={store}>

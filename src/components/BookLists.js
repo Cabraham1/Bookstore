@@ -8,10 +8,10 @@ const BookLists = () => {
     <div>
       {books.map((book) => (
         <Book
-          key={book.id}
-          id={book.id}
-          title={book.title}
-          author={book.author}
+          key={book[0]}
+          id={book[0]}
+          title={book[1][0].title}
+          author={book[1][0].author}
         />
       ))}
       <AddBook />
