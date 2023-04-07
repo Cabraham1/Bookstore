@@ -2,16 +2,16 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { removeBook } from '../redux/books/Books';
-import { ProgressBar, percentage } from './ProgressBar';
+import ProgressBar from './ProgressBar';
 
 const Book = (props) => {
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
   const {
     title, author, id, category,
   } = props;
 
   const removeHandler = () => {
-    dispath(removeBook(id));
+    dispatch(removeBook(id));
   };
 
   return (
@@ -43,7 +43,7 @@ const Book = (props) => {
               <ProgressBar />
             </div>
             <div>
-              <div className="percent">{`${percentage}%`}</div>
+              <div className="percent">{`${ProgressBar.percentage}%`}</div>
               <div className="completed">completed</div>
             </div>
           </div>
