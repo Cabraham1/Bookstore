@@ -7,7 +7,8 @@ import 'react-circular-progressbar/dist/styles.css';
 const percentage = Math.floor(Math.random() * 20);
 
 const ProgressBar = () => (
-  <div style={{ width: 120, height: 120, marginRight: '20px' }}>
+  const progressbarStyle = { width: 120, height: 120, marginRight: '20px' };
+  <div style={progressbarStyle}>
     <CircularProgressbar
       value={percentage}
       text=""
