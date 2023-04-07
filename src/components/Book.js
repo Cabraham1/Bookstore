@@ -1,12 +1,14 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { PropTypes } from "prop-types";
-import { removeBook } from "../redux/books/Books";
-import { ProgressBar, percentage } from "./ProgressBar";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { PropTypes } from 'prop-types';
+import { removeBook } from '../redux/books/Books';
+import { ProgressBar, percentage } from './ProgressBar';
 
 const Book = (props) => {
   const dispath = useDispatch();
-  const { title, author, id, category } = props;
+  const {
+    title, author, id, category,
+  } = props;
 
   const removeHandler = () => {
     dispath(removeBook(id));
