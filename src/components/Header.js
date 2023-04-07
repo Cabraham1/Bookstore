@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 const Header = () => (
   <header>
     <div className="left-content">
-      <h1>Bookstore CMS</h1>
+      <h1>Bookstore App</h1>
       <Navbar />
     </div>
     <div className="user">
