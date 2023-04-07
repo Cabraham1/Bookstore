@@ -31,6 +31,8 @@
 
 # 📖 [BOOKStore] <a name="about-project"></a>
 
+![](./src/bookstore.PNG)
+
 > This project aims to create a basic website that showcases a list of books that can be edited by users. The objective is to build a responsive multi-page book website using Html, CSS, and JavaScript.
 
 > As part of the project, you will be required to implement the React redux and linter following the guidelines in react redux linter config documentation. Additionally, you should adopt a mobile-first approach in the website design and ensure that it is responsive both on mobile and desktop devices. The website should also be interactive.

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import store from './redux/configureStore';
 import { fetchBooks } from './redux/books/Books';
+import './style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
